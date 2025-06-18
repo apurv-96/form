@@ -104,7 +104,7 @@
 
       const form = e.target;
       const formData = new FormData(form);
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwwdqF8ApBsjzUcX2kVy0aHtXGA-xXu9j85-AuI6YCKR1nCoskeBnF6F6wl1bp_KlJA/exec'; // Replace with your Google Apps Script web app URL
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxCDTVK1T2IxT8NB0bCwNQ6blRnIlFZybpaYXT1AeYePT-jT-zOVwf2Xl_yO40sOEKF/exec'; // Replace with your Google Apps Script web app URL
 
       fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => document.getElementById('status').innerText = "✔️ Application Submitted Successfully!")
